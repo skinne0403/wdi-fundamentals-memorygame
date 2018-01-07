@@ -13,13 +13,22 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+a h2 {
   letter-spacing: 1px;
-  font-weight: 600px;
-  font-size: 20px;
+  color: #F15B31;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   text-transform: uppercase;
-
+  text-decoration: none;
     }
+h2 {
+      font-family: "Raleway", sans-serif;
+      color: #0d2c40;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+}
 
 p {
   font-family: "Droid Serif", serif;
