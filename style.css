@@ -54,6 +54,10 @@ a {
   margin: 20px;
   color: #FFFFFF;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+a:hover {
+  border-color: white;
 }
 
 main {
@@ -63,4 +67,35 @@ main {
 }
 img {
   margin: 40px 8px 40px 8px;
+}
+
+footer {
+  text-transform: uppercase;
+  padding: 0 20px;
+  background-color: #0D2C40;
+  color: white;
+  font-size: 14px;
+  letter-spacing: .08em;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.copyright {
+  float: left;
+}
+
+.message {
+  float: right;
+}
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+.name {
+  font-weight: 700;
+  color: #F15B31;
 }
