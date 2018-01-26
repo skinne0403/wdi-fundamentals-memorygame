@@ -24,11 +24,11 @@ var cards = [
 var cardsInPlay = [];
 
 var checkForMatch = function () {
-
+ console.log(cardsInPlay);
   if (cardsInPlay[0] === cardsInPlay[1]) {
-    console.log("You found a match!");
+    alert("You found a match!");
   } else {
-    console.log("Sorry, try again.");
+    alert("Sorry, try again.");
   }
 };
 
@@ -42,12 +42,8 @@ var flipCard = function () {
   console.log(cards[cardId].cardImage);
   console.log(cards[cardId].suit);
   if (cardsInPlay.length === 2) {
-    alert("you found a match!");
-  } else {
-    alert("sorry, try again!");
+  checkForMatch();
   }
-checkForMatch();
-
 };
 
 var createBoard = function() {
@@ -59,6 +55,7 @@ var createBoard = function() {
       document.getElementById('game-board').appendChild(cardElement);
   }
 };
+
 createBoard();
 
 
